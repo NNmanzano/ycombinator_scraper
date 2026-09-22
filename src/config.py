@@ -33,3 +33,4 @@ DEFAULT_BATCHES = ["Winter 2025"]
 
 HEADLESS = True
 REQUEST_DELAY_RANGE = (1.0, 3.0)  # polite delay between company detail pages
+
