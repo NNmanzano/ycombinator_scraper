@@ -1,8 +1,7 @@
 # YCombinator Scraper
 
 Pulls the public YC company directory (name, website, CEO, CEO LinkedIn) into
-a single Excel file, one row per company. Built as a small OOP pipeline
-instead of a script, so it keeps working when a page fails to load or the
+a single Excel file, one row per company. Built as a pipeline that keeps working when a page fails to load or the
 site's anti-bot layer flags a request.
 
 ## Highlights
@@ -11,7 +10,7 @@ site's anti-bot layer flags a request.
   not raw `requests`. YC blocks plain HTTP clients at scraper volume, a real
   browser session does not get flagged.
 - The Algolia search key that powers YC's company list is resolved live off
-  the public companies page on every run instead of being hardcoded, so the
+  the public companies page on every run, so the
   scraper does not silently die the next time YC rotates it.
 - Each company scrapes independently. One broken page (layout glitch, network
   blip) gets logged and skipped, it does not take down a 150+ company run.
