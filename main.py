@@ -24,6 +24,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--limit", type=int, default=None, help="Only scrape the first N companies")
     parser.add_argument("--show-browser", action="store_true", help="Run Chrome non-headless (debugging)")
+
     return parser.parse_args()
 
 
